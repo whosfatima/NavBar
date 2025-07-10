@@ -4,25 +4,22 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
-button{
-  all: unset;
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  height: 100px;
+  padding: 0px 20px;
+  align-items: center;
 }
-div > ul > button > li  {
-  list-style-type: none;
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
   cursor: pointer;
-  padding: 30px;
-  border: 1px solid ;
-  transition: all 0.3s ease-in-out;
-}
-.active {
-  background-color: green;
-  color: violet;
+  padding: 0px 18px;
 }
