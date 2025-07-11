@@ -19,7 +19,6 @@ ul {
   list-style: none;
   display: flex;
   transition: 0.1s all ease-in-out;
-
 }
 li {
   cursor: pointer;
@@ -32,20 +31,36 @@ button {
   padding: 10px 20px;
   border-radius: 12px;
   transition: 0.1s all ease-in-out;
-
 }
 button:hover {
   color: orange;
   background-color: #000;
 }
+
+.underHeader {
+  background-color: red;
+  height: 150px;
+}
+.underHeader > ul > li {
+  padding: 8px 30px;
+}
+.hidden{
+  display: none;
+}
 @media only screen and (min-width: 800px) {
   button {
- display: none;
-
+    display: none;
+  }
+    .underHeader {
+   display: none;
   }
 }
 @media only screen and (max-width: 800px) {
   ul {
- display: none;
+    display: none;
+  }
+    .underHeader > ul {
+display: flex;
+flex-direction: column;
   }
 }
