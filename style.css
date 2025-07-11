@@ -18,8 +18,34 @@ header {
 ul {
   list-style: none;
   display: flex;
+  transition: 0.1s all ease-in-out;
+
 }
 li {
   cursor: pointer;
   padding: 0px 18px;
+}
+button {
+  all: unset;
+  cursor: pointer;
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: 0.1s all ease-in-out;
+
+}
+button:hover {
+  color: orange;
+  background-color: #000;
+}
+@media only screen and (min-width: 800px) {
+  button {
+ display: none;
+
+  }
+}
+@media only screen and (max-width: 800px) {
+  ul {
+ display: none;
+  }
 }
